@@ -13,6 +13,13 @@ app.get('/products',(req,res)=>{
   })
 })
 
+app.get('/products2',(req,res)=>{
+  res.send({
+    message : 'get Products',
+    data : []
+  })
+})
+
 app.listen(3000, "localhost", () => {
   console.log(`Server listening on ${3000}`);
 });
